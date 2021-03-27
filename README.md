@@ -4,7 +4,7 @@
 [![Total Downloads](https://poser.pugx.org/munafio/chatify/downloads)](https://packagist.org/packages/munafio/chatify)
 [![License](https://poser.pugx.org/munafio/chatify/license)](https://packagist.org/packages/munafio/chatify)
 
-# Chatify Laravel Package
+# Chatify Laravel Package Versión Español
 It is a Laravel package to add a complete real-time chat system to your application with one command line.
 
 # Requirements
