@@ -530,7 +530,7 @@ body{
   transform: scale(.9);
 }
 .messengerColor-1{
-  background-color: #2180f3;
+  background-color: #651eeb;
 }
 .messengerColor-2{
   background-color: #2196F3;
@@ -606,11 +606,11 @@ body{
     outline: none;
     text-decoration: none;
     transition: all .3s;
-    color: rgb(33, 128, 243);
+    color: #651eeb;
 }
 .app-btn:hover,
 .app-btn:focus{
-    color: rgb(33, 128, 243);
+    color: #651eeb;
     outline: none;
     text-decoration: none;
 }
@@ -627,12 +627,12 @@ body{
     background: #e4e4e4;
 }
 .a-btn-primary{
-    background: #0976d6;
+    background: #651eeb;
     color: #fff;
 }
 .a-btn-primary:hover,
 .a-btn-primary:focus{
-    background: #0085ef;
+    background: #651eeb;
     color: #fff;
 }
 .a-btn-warning{
