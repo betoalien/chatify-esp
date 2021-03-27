@@ -13,7 +13,7 @@
                 </nav>
             </nav>
             {{-- Search input --}}
-            <input type="text" class="messenger-search" placeholder="Search" />
+            <input type="text" class="messenger-search" placeholder="Buscar" />
             {{-- Tabs --}}
             <div class="messenger-listView-tabs">
                 <a href="#" @if($route == 'user') class="active-tab" @endif data-view="users">
@@ -49,9 +49,9 @@
              {{-- ---------------- [ Search Tab ] ---------------- --}}
            <div class="messenger-tab app-scroll" data-view="search">
                 {{-- items --}}
-                <p class="messenger-title">Search</p>
+                <p class="messenger-title">Buscar</p>
                 <div class="search-records">
-                    <p class="message-hint"><span>Type to search..</span></p>
+                    <p class="message-hint"><span>Buscar..</span></p>
                 </div>
              </div>
         </div>
