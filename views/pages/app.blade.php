@@ -27,7 +27,7 @@
            <div class="@if($route == 'user') show @endif messenger-tab app-scroll" data-view="users">
 
                {{-- Favorites --}}
-               <p class="messenger-title">Favorites</p>
+               <p class="messenger-title">EN LÍNEA</p>
                 <div class="messenger-favorites app-scroll-thin"></div>
 
                {{-- Saved Messages --}}

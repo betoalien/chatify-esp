@@ -205,7 +205,7 @@ class MessagesController extends Controller
         // send the response
         return Response::json([
             'count' => $query->count(),
-            'messages' => '<p class="message-hint"><span>Say \'hi\' and start messaging</span></p>',
+            'messages' => '<p class="message-hint"><span>Di \'hola\' y empieza a chatear</span></p>',
         ]);
     }
 
@@ -258,7 +258,7 @@ class MessagesController extends Controller
 
         // send the response
         return Response::json([
-            'contacts' => $users->count() > 0 ? $contacts : '<br><p class="message-hint"><span>Tu lista de contactos esta vacía</span></p>',
+            'contacts' => $users->count() > 0 ? $contacts : '<br><p class="message-hint"><span>No hay mensajes activos</span></p>',
         ], 200);
     }
 
@@ -326,7 +326,7 @@ class MessagesController extends Controller
         return Response::json([
             'favorites' => $favorites->count() > 0
                 ? $favoritesList
-                : '<p class="message-hint"><span>Tu lista de favoritos esta vacía</span></p>',
+                : '<p class="message-hint"><span>Tu lista de contactos esta vacía</span></p>',
         ], 200);
     }
 
