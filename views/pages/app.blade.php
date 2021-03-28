@@ -8,7 +8,7 @@
                 <a href="#"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">MENSAJES</span> </a>
                 {{-- header buttons --}}
                 <nav class="m-header-right">
-                    <a href="#"><i class="fas fa-cog settings-btn"></i></a>
+                <a href="{{ route('/') }}"><i class="fas fa-home"></i></a>
                     <a href="#" class="listView-x"><i class="fas fa-times"></i></a>
                 </nav>
             </nav>
@@ -64,7 +64,7 @@
                 {{-- header buttons --}}
                 <nav class="m-header-right">
                     <a href="#" class="add-to-favorite"><i class="fas fa-star"></i></a>
-                    <a href="{{ route('home') }}"><i class="fas fa-home"></i></a>
+                    <a href="{{ route('/') }}"><i class="fas fa-home"></i></a>
                     <a href="#" class="show-infoSide"><i class="fas fa-info-circle"></i></a>
                 </nav>
             </nav>
