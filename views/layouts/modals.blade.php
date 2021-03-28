@@ -8,11 +8,11 @@
   <div class="app-modal" data-name="delete">
       <div class="app-modal-container">
           <div class="app-modal-card" data-name="delete" data-modal='0'>
-              <div class="app-modal-header">Are you sure you want to delete this?</div>
-              <div class="app-modal-body">You can not undo this action</div>
+              <div class="app-modal-header">Estas seguro de eliminar esto?</div>
+              <div class="app-modal-body">No puedes deshacer esta acción/div>
               <div class="app-modal-footer">
-                  <a href="javascript:void(0)" class="app-btn cancel">Cancel</a>
-                  <a href="javascript:void(0)" class="app-btn a-btn-danger delete">Delete</a>
+                  <a href="javascript:void(0)" class="app-btn cancel">Cancelar</a>
+                  <a href="javascript:void(0)" class="app-btn a-btn-danger delete">Eliminar</a>
               </div>
           </div>
       </div>
@@ -35,7 +35,7 @@
           <div class="app-modal-card" data-name="settings" data-modal='0'>
               <form id="updateAvatar" action="{{ route('avatar.update') }}" enctype="multipart/form-data" method="POST">
                   @csrf
-                  <div class="app-modal-header">Update your profile settings</div>
+                  <div class="app-modal-header">Actualizar tu perfil</div>
                   <div class="app-modal-body">
                       {{-- Udate profile avatar --}}
                       <div class="avatar av-l upload-avatar-preview"
@@ -53,7 +53,7 @@
                          data-mode="{{ Auth::user()->dark_mode > 0 ? 1 : 0 }}"></span></p>
                       {{-- change messenger color  --}}
                       <p class="divider"></p>
-                      <p class="app-modal-header">Change {{ config('chatify.name') }} Color</p>
+                      <p class="app-modal-header">Cambiar el Color del {{ config('chatify.name') }}</p>
                       <div class="update-messengerColor">
                             <a href="javascript:void(0)" class="messengerColor-1"></a>
                             <a href="javascript:void(0)" class="messengerColor-2"></a>
