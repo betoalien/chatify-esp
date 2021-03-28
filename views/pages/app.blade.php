@@ -18,9 +18,7 @@
             <div class="messenger-listView-tabs">
                 <a href="#" @if($route == 'user') class="active-tab" @endif data-view="users">
                     <span class="far fa-user"></span> Personas</a>
-                <a href="#" @if($route == 'group') class="active-tab" @endif data-view="groups">
-                    <span class="fas fa-users"></span> Grupos</a>
-            </div>
+                        </div>
         </div>
         {{-- tabs and lists --}}
         <div class="m-body">
@@ -40,13 +38,7 @@
 
            </div>
 
-           {{-- ---------------- [ Group Tab ] ---------------- --}}
-           <div class="@if($route == 'group') show @endif messenger-tab app-scroll" data-view="groups">
-                {{-- items --}}
-                <p style="text-align: center;color:grey;">Soon will be available</p>
-             </div>
-
-             {{-- ---------------- [ Search Tab ] ---------------- --}}
+           {{-- ---------------- [ Search Tab ] ---------------- --}}
            <div class="messenger-tab app-scroll" data-view="search">
                 {{-- items --}}
                 <p class="messenger-title">Buscar</p>
@@ -79,14 +71,14 @@
         </div>
         {{-- Internet connection --}}
         <div class="internet-connection">
-            <span class="ic-connected">Connected</span>
-            <span class="ic-connecting">Connecting...</span>
-            <span class="ic-noInternet">No internet access</span>
+            <span class="ic-connected">Conectado</span>
+            <span class="ic-connecting">Conectado...</span>
+            <span class="ic-noInternet">No hay internet</span>
         </div>
         {{-- Messaging area --}}
         <div class="m-body app-scroll">
             <div class="messages">
-                <p class="message-hint" style="margin-top: calc(30% - 126.2px);"><span>Please select a chat to start messaging</span></p>
+                <p class="message-hint" style="margin-top: calc(30% - 126.2px);"><span>Porfavor selecciona un usuario para empezar a hablar</span></p>
             </div>
             {{-- Typing indicator --}}
             <div class="typing-indicator">

@@ -258,7 +258,7 @@ class MessagesController extends Controller
 
         // send the response
         return Response::json([
-            'contacts' => $users->count() > 0 ? $contacts : '<br><p class="message-hint"><span>Your contatct list is empty</span></p>',
+            'contacts' => $users->count() > 0 ? $contacts : '<br><p class="message-hint"><span>Tu lista de contactos esta vacía</span></p>',
         ], 200);
     }
 
@@ -326,7 +326,7 @@ class MessagesController extends Controller
         return Response::json([
             'favorites' => $favorites->count() > 0
                 ? $favoritesList
-                : '<p class="message-hint"><span>Your favorite list is empty</span></p>',
+                : '<p class="message-hint"><span>Tu lista de favoritos esta vacía</span></p>',
         ], 200);
     }
 
