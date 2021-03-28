@@ -79,10 +79,11 @@
         <div class="m-body app-scroll">
             <div class="messages">
                 <p class="message-hint" style="margin-top: calc(30% - 126.2px);"><span>Porfavor selecciona un usuario para empezar a hablar</span></p>
-            </div>
-            {{-- Favorites --}}
-               <p class="messenger-title">EN LÍNEA</p>
+                <p class="messenger-title">EN LÍNEA</p>
                 <div class="messenger-favorites app-scroll-thin"></div>
+            </div>
+           
+               
             {{-- Typing indicator --}}
             <div class="typing-indicator">
                 <div class="message-card typing">
