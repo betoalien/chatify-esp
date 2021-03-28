@@ -24,7 +24,7 @@
               <div class="app-modal-header"></div>
               <div class="app-modal-body"></div>
               <div class="app-modal-footer">
-                  <a href="javascript:void(0)" class="app-btn cancel">Cancel</a>
+                  <a href="javascript:void(0)" class="app-btn cancel">Cancelar</a>
               </div>
           </div>
       </div>
