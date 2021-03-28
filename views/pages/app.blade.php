@@ -78,12 +78,11 @@
         {{-- Messaging area --}}
         <div class="m-body app-scroll">
             <div class="messages">
-                <p class="message-hint" style="margin-top: calc(30% - 126.2px);"><span>Porfavor selecciona un usuario para empezar a hablar</span></p>
-                <p class="messenger-title">EN LÍNEA</p>
+                <p class="message-hint" style="margin-top: calc(30% - 126.2px);"><span>Porfavor selecciona un usuario para empezar a hablar</span>
                 <div class="messenger-favorites app-scroll-thin"></div>
+                </p>
             </div>
-           
-               
+            
             {{-- Typing indicator --}}
             <div class="typing-indicator">
                 <div class="message-card typing">
