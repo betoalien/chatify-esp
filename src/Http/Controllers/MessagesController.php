@@ -85,7 +85,7 @@ class MessagesController extends Controller
         return Response::json([
             'favorite' => $favorite,
             'fetch' => $fetch,
-            'user_avatar' => asset('/images/' . config('chatify.user_avatar.folder') . '/' . $fetch->avatar),
+            'user_avatar' => asset('/storage/' . config('chatify.user_avatar.folder') . '/' . $fetch->avatar),
         ]);
     }
 
@@ -98,7 +98,7 @@ class MessagesController extends Controller
      */
     public function download($fileName)
     {
-        $path = storage_path() . 'images/' . config('chatify.attachments.folder') . '/' . $fileName;
+        $path = storage_path() . '/app/public/' . config('chatify.attachments.folder') . '/' . $fileName;
         if (file_exists($path)) {
             return Response::download($path, $fileName);
         } else {
@@ -372,7 +372,7 @@ class MessagesController extends Controller
         for ($i = 0; $i < count($shared); $i++) {
             $sharedPhotos .= view('Chatify::layouts.listItem', [
                 'get' => 'sharedPhoto',
-                'image' => asset('images/attachments/' . $shared[$i]),
+                'image' => asset('storage/attachments/' . $shared[$i]),
             ])->render();
         }
         // send the response
@@ -429,7 +429,7 @@ class MessagesController extends Controller
                 if (in_array($file->getClientOriginalExtension(), $allowed_images)) {
                     // delete the older one
                     if (Auth::user()->avatar != config('chatify.user_avatar.default')) {
-                        $path = storage_path('images/' . config('chatify.user_avatar.folder') . '/' . Auth::user()->avatar);
+                        $path = storage_path('app/public/' . config('chatify.user_avatar.folder') . '/' . Auth::user()->avatar);
                         if (file_exists($path)) {
                             @unlink($path);
                         }
