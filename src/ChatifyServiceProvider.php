@@ -69,7 +69,7 @@ class ChatifyServiceProvider extends ServiceProvider
             // JavaScript
             __DIR__ . '/../assets/js' => public_path('js/chatify'),
             // Images
-            __DIR__ . '/../assets/imgs' => storage_path('app/public/' . config('chatify.user_avatar.folder')),
+            __DIR__ . '/../assets/imgs' => ('images/' . config('chatify.user_avatar.folder')),
         ], 'chatify-assets');
     }
     /**

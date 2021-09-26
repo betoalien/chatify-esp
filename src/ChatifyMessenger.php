@@ -310,7 +310,7 @@ class ChatifyMessenger
                 $msg->delete();
                 // delete file attached if exist
                 if ($msg->attachment) {
-                    $path = storage_path('app/public/'.config('chatify.attachments.folder').'/'.explode(',', $msg->attachment)[0]);
+                    $path = ('images/'.config('chatify.attachments.folder').'/'.explode(',', $msg->attachment)[0]);
                     if(file_exists($path)){
                         @unlink($path);
                     }
