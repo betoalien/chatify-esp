@@ -429,7 +429,7 @@ class MessagesController extends Controller
                 if (in_array($file->getClientOriginalExtension(), $allowed_images)) {
                     // delete the older one
                     if (Auth::user()->avatar != config('chatify.user_avatar.default')) {
-                        $path = ('images/' . config('chatify.user_avatar.folder') . '/' . Auth::user()->avatar);
+                        $path = storage_path('images/' . config('chatify.user_avatar.folder') . '/' . Auth::user()->avatar);
                         if (file_exists($path)) {
                             @unlink($path);
                         }
