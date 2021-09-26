@@ -98,7 +98,7 @@ class MessagesController extends Controller
      */
     public function download($fileName)
     {
-        $path = '/images/' . config('chatify.attachments.folder') . '/' . $fileName;
+        $path = storage_path() . 'images/' . config('chatify.attachments.folder') . '/' . $fileName;
         if (file_exists($path)) {
             return Response::download($path, $fileName);
         } else {
